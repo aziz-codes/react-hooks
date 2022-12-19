@@ -1,7 +1,7 @@
-import Container from "./components/Container";
+import AddMovie from "./components/AddMovie";
 
 function App() {
-  return <Container />;
+  return <AddMovie />;
 }
 
 export default App;
