@@ -1,4 +1,4 @@
-import AddMovie from "./components/AddMovie";
+import AddMovie from "./components/Hooks";
 
 function App() {
   return <AddMovie />;

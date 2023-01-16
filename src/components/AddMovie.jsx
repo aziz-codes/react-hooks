@@ -10,11 +10,6 @@ const AddMovie = () => {
   const handleClick = () => {
     if (ratings > 100 || movieName === "" || duration === "") {
       setError("Please fill the details properly..");
-      // } else if (duration.endsWith("mins")) {
-      //   //   matches = duration.match(/(\d+)/);
-      //   //   dur = matches[0] / 60;
-      //   //   console.log(dur);
-      // }
     } else {
       const movieDetails = {
         movieName,
@@ -24,6 +19,12 @@ const AddMovie = () => {
       setFavMovies([...favMovies, movieDetails]);
       setError("");
     }
+  };
+  const handleSearch = (e) => {
+    const searchResult = favMovies.filter((movie) =>
+      movie.movieName.toLowerCase().includes(e.toLowerCase())
+    );
+   setFavMovies(searchResult);
   };
   return (
     <div className="flex flex-col w-full  text-white justify-center items-center">
@@ -77,7 +78,16 @@ const AddMovie = () => {
           </button>
         </div>
         <div className="w-96 h-96 bg-white text-black flex flex-col">
-          <h4 className="text-center">Movies</h4>
+          <div className="flex justify-center text-black">
+            <input
+              type="text"
+              className="outline-none border border-gray-300 rounded-md mt-3 ml-5 p-1"
+              placeholder="Search"
+              onKeyUp={(e) => {
+                handleSearch(e.target.value);
+              }}
+            />
+          </div>
           {favMovies.map((movie, index) => (
             <div
               key={index}
