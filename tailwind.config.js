@@ -4,6 +4,7 @@ module.exports = {
     "./src/**.{js,jsx}",
     "./src/components/**/*.{js,jsx}",
     "./src/layouts/**/*.{js,jsx}",
+    "./src/useReducer/**/*.{js,jsx}"
   ],
   theme: {
     extend: {},
