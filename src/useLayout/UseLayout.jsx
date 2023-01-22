@@ -7,6 +7,7 @@ const UseLayout = () => {
       setNum(1 + Math.random() * 10);
     }
   }, [num]);
+
   return <div>random Number is {num}</div>;
 };
 
