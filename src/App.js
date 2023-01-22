@@ -1,7 +1,7 @@
-import AddMovie from "./useReducer/UseReducer";
+import UseLayout from "./useLayout/UseLayout";
 
 function App() {
-  return <AddMovie />;
+  return <UseLayout />;
 }
 
 export default App;

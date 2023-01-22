@@ -2,6 +2,7 @@ import React,{useReducer} from 'react'
 import reducer from './reducer';
 const UseReducer = () => {
     let initialValue = 0;
+    console.log("Re-rendered");
     const [count, dispatch] = useReducer(reducer, initialValue)
   return (
     <div className='flex justify-center items-center flex-row min-h-screen gap-4'>
