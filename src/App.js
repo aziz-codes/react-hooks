@@ -1,7 +1,7 @@
-import UseLayout from "./useLayout/UseLayout";
+import Parent from "./components/useCallback/Parent";
 
 function App() {
-  return <UseLayout />;
+  return <Parent />;
 }
 
 export default App;

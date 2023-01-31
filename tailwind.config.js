@@ -4,7 +4,8 @@ module.exports = {
     "./src/**.{js,jsx}",
     "./src/components/**/*.{js,jsx}",
     "./src/layouts/**/*.{js,jsx}",
-    "./src/useReducer/**/*.{js,jsx}"
+    "./src/useReducer/**/*.{js,jsx}",
+    "./src/useMemo/**/*.{js,jsx}",
   ],
   theme: {
     extend: {},
